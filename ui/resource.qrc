@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="ui">
+    <file>ui/advance_search.ui</file>
+    <file>ui/gui_reposnsive.ui</file>
+    <file>ui/transaction_detail.ui</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>icon/clear.png</file>
+    <file>icon/exit.png</file>
+    <file>icon/exportExcel.png</file>
+    <file>icon/filter.png</file>
+    <file>icon/logo.png</file>
+    <file>icon/run.png</file>
+    <file>icon/search.png</file>
+    <file>icon/transaction.png</file>
+    <file>icon/upload.png</file>
+    <file>icon/inventory.ico</file>
+  </qresource>
+</RCC>

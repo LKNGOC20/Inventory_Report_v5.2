@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="SaveButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>230</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Mincho</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#SaveButton {
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QPushButton#SaveButton:pressed {
+padding-left:5px;
+padding-top:5px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>321</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QCheckBox" name="checkBox_All_Type">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>All Type</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_I_Plus">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_I_Minus">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I-</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_P_Minus">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>P-</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_P_Plus">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>P+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_V_Plus">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_V_Minus">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V-</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_M_Plus">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>M+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_M_Minus">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>50</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>M-</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_C_Plus">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C+</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_C_Minus">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C-</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>SELECT MOVEMENT TYPE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>SELECT PERIOD</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Period_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>321</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>ALL(From beginning to valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1-30(1-30 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>31-60(31-60 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>61-90(61-90 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>91-180(91-180 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>181-270(181-270 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>271-360(2711-360 Days Ago from the valuation date)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>&gt;361(Over 361 Days from the valuation date)</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

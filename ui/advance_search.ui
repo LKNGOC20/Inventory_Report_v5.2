@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>101</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="SaveButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Mincho</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#SaveButton {
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QPushButton#SaveButton:pressed {
+padding-left:5px;
+padding-top:5px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>102</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Organization</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="CheckableComboBox" name="OrganizationcomboBox" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>152</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Item_Category</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="CheckableComboBox" name="Item_CategorycomboBox" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CheckableComboBox</class>
+   <extends>QWidget</extends>
+   <header>checkablecombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource_reponsive.qrc"/>
+ </resources>
+ <connections/>
+</ui>
